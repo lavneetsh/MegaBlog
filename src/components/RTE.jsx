@@ -4,7 +4,7 @@ import { Controller } from 'react-hook-form';
 
 export default function RTE({ name, control, label, defaultValue = "" }) {
   // Access the API key from the environment variables
-  const apiKey = import.meta.env.VITE_TINYMCE_API_KEY;
+  const apiKey = String(import.meta.env.VITE_TINYMCE_API_KEY);
 
   return (
     <div className='w-full'>
